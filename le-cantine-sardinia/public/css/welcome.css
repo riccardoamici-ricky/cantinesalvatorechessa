@@ -38,6 +38,10 @@ body {
         display: none;
     }
 }
+.chessa-card {
+    padding: 10px;
+    text-align: center;
+}
 
 .main-container::-webkit-scrollbar {
     display: none;

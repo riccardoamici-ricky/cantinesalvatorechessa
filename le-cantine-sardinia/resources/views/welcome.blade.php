@@ -30,19 +30,19 @@
     <!-- Navbar -->
     <div class="main-container">
 
-    <nav class="uk-navbar-container uk-flex-column uk-flex-top" data-uk-navbar data-uk-toggle="media: @s; cls: uk-flex-row uk-flex-top; mode: media" style="background: none">
-        <button type="button" data-uk-toggle="target: .navbar-collapse; cls: hidden-up-to-s" class="uk-navbar-toggle uk-hidden@s" data-uk-navbar-toggle-icon style="color:#FFF !important"></button>
-        <div class="navbar-collapse hidden-up-to-s">
-            <div class="uk-navbar-left">
-                <ul data-uk-toggle="media: @s; cls: uk-navbar-nav uk-padding-remove; mode: media" class="uk-nav uk-nav-primary uk-padding-small">
-                    <li><a href="#about-us" class="link-nav">{{ __('messages.about-us') }}</a></li>
-                    <li><a href="#wines" class="link-nav">{{ __('messages.our-wines') }}</a></li>
-                    <li><a href="#service" class="link-nav">{{ __('messages.services') }}</a></li>
-                    <li><a href="#contact" class="link-nav">{{ __('messages.contact-us') }}</a></li>
-                </ul>
+        <nav class="uk-navbar-container uk-flex-column uk-flex-top" data-uk-navbar data-uk-toggle="media: @s; cls: uk-flex-row uk-flex-top; mode: media" style="background: none">
+            <button type="button" data-uk-toggle="target: .navbar-collapse; cls: hidden-up-to-s" class="uk-navbar-toggle uk-hidden@s" data-uk-navbar-toggle-icon style="color:#FFF !important"></button>
+            <div class="navbar-collapse hidden-up-to-s">
+                <div class="uk-navbar-left">
+                    <ul data-uk-toggle="media: @s; cls: uk-navbar-nav uk-padding-remove; mode: media" class="uk-nav uk-nav-primary uk-padding-small">
+                        <li><a href="#about-us" class="link-nav">{{ __('messages.about-us') }}</a></li>
+                        <li><a href="#wines" class="link-nav">{{ __('messages.our-wines') }}</a></li>
+                        <li><a href="#service" class="link-nav">{{ __('messages.services') }}</a></li>
+                        <li><a href="#contact" class="link-nav">{{ __('messages.contact-us') }}</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
 
 
         <nav class="og-navbar uk-margin uk-navbar-container uk-navbar-transparent"uk-sticky  uk-navbar="mode: click">
@@ -193,12 +193,12 @@
 
         <!-- Contatti  -->
 
-        <div class="cr-wrapper contact-web" id="contact" style="padding-bottom:50px">
+        <div class="cr-wrapper hidden-up-to-s contact-web" id="contact" style="padding-bottom:50px">
             <div class="info-container uk-container uk-margin contact-container">
                 <div class="info" id="contact-text">
                     <img src="{{ asset('media/chessa-salvatore-logo.png') }}" alt="" width="300px">
                     <p>CANTINA SALVATORE CHESSA</p>
-                    <p>Via Sotgia , 11 - Usini 07049
+                    <p>Via Sotgia, 11 - Usini 07049
                         Sassari - Sardegna (Italia)
                         Tel: 347 028 9441 - Email: chessasalvatore@hotmail.com
                     </p>
@@ -222,17 +222,46 @@
         </div>
 
 
+        <div class="uk-card uk-card-small uk-card-default cr-wrapper chessa-card" style="margin-top:30px">
+            <img src="{{ asset('media/chessa-salvatore-logo.png') }}" alt="" width="300px">
+            <p>CANTINA SALVATORE CHESSA</p>
+            <p>Via Sotgia, 11 - Usini 07049
+                Sassari - Sardegna (Italia)
+                Tel: 347 028 9441 - Email: chessasalvatore@hotmail.com
+            </p>
+        </div>
+
+        <div class="uk-card uk-card-small uk-card-default cr-wrapper chessa-card">
+            <form
+                action="https://formspree.io/f/mwkabjrl"
+                method="POST"
+                class="form"
+                style="margin-left: 0px">
+                <label>
+                    <input class="uk-input" style="margin-left: 0px" type="email" name="_replyto" placeholder="{{ __('messages.placeholder-1') }}">
+                </label>
+                <label>
+                    <input class="uk-input" style="margin-left: 0px" type="email" name="_replyto" placeholder="{{ __('messages.placeholder-2') }}">
+                </label>
+                <label>
+                    <textarea class="uk-textarea" name="message" placeholder="{{ __('messages.placeholder-3') }}"></textarea>
+                </label>
+                <button class="button uk-button" type="submit">{{ __('messages.submit') }}</button>
+            </form>
+        </div>
+
+
+
         <a href="#top" uk-totop uk-scroll>TOP</a>
-        
         <!-- Footbar  -->
 
 
         <footer>
-        <div class="bottom-details">
-            <div class="bottom_text">
-            <span class="copyright_text">Copyright © <?=date("Y");?> Cantina Chessa Salvatore - P.Iva:  IT 01582920904 - tel. +39 347 028 9441</span>
+            <div class="bottom-details">
+                <div class="bottom_text">
+                    <span class="copyright_text">Copyright © <?=date("Y");?> Cantina Chessa Salvatore - P.Iva:  IT 01582920904 - tel. +39 347 028 9441</span>
+                </div>
             </div>
-        </div>
         </footer>
 
 
@@ -240,13 +269,10 @@
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.22/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.22/dist/js/uikit-icons.min.js"></script>
     <script type="text/javascript">
-  
     var url = "{{ route('changeLang') }}";
-  
     $(".changeLang").change(function(){
         window.location.href = url + "?lang="+ $(this).val();
     });
-  
 </script>
     </body>
 </html>
