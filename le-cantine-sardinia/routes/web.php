@@ -16,3 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/lang/home', 'App\Http\Controllers\LangController@index');
+
+
+Route::get('lang/change', 'App\Http\Controllers\LangController@change')->name('changeLang');
