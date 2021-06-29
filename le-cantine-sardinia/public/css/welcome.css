@@ -38,6 +38,10 @@ body {
         display: none;
     }
 }
+.chessa-card {
+    padding: 10px;
+    text-align: center;
+}
 
 .main-container::-webkit-scrollbar {
     display: none;
@@ -77,6 +81,14 @@ h2 {
     text-align: center;
     justify-content: center;
     padding: 10rem;
+}
+@media (max-width: 520px) {
+    .title {
+        text-align: center;
+        padding: 0;
+        display: block;
+        padding-top: 50px;
+    }
 }
 
 .headline-wine h1 {
