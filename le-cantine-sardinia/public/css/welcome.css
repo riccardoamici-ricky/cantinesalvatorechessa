@@ -43,6 +43,13 @@ body {
     text-align: center;
 }
 
+#about-us,
+.service {
+    border-radius: 5px;
+}
+.uk-cover-container {
+    border-radius: 5px 0 0 5px;
+}
 .main-container::-webkit-scrollbar {
     display: none;
 }
@@ -116,9 +123,11 @@ p {
     padding: 3em;
 }
 
-img,
-video {
+img {
     border-radius: 5px;
+}
+video {
+    border-radius: 0 0 5px 5px;
 }
 
 .image-info {
@@ -142,6 +151,7 @@ video {
     margin-top: 100px;
     margin-bottom: 50px;
 }
+
 @media (max-width: 520px) {
     .contact-container {
         display: grid !important;
@@ -160,14 +170,18 @@ video {
         padding-top: 20px;
     }
 }
-
+.contact-card {
+    border-radius: 5px 5px 0 0;
+}
+.form-container {
+    border-radius: 0 0 5px 5px;
+}
 #contact-text {
     text-align: center;
 }
 .form {
     margin-left: 40px;
 }
-
 .uk-input {
     border-radius: 5px;
     margin-bottom: 1em;
@@ -203,7 +217,7 @@ footer .bottom-details .bottom_text {
     margin: auto;
     padding: 20px 40px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 .bottom-details .bottom_text span,
 .bottom-details .bottom_text a {
