@@ -178,7 +178,7 @@
 
         <!-- I servizi  -->
         <div class="cr-wrapper" style="padding-top:10vh" id="service">
-            <div class="uk-card uk-card-default">
+            <div class="uk-card uk-card-default service">
                 <div class="uk-card-body">
                     <h3 class="uk-card-title">{{ __('messages.services') }}</h3>
                     <p><strong>{{ __('messages.services-1') }}</strong> {{ __('messages.services-1-text') }}</p>
@@ -222,16 +222,16 @@
         </div>
 
 
-        <div class="uk-card uk-card-small uk-card-default cr-wrapper chessa-card" style="margin-top:30px">
+        <div class="uk-card uk-card-small uk-card-default cr-wrapper chessa-card contact-card" style="margin-top:30px">
             <img src="{{ asset('media/chessa-salvatore-logo.png') }}" alt="" width="300px">
             <p>CANTINA SALVATORE CHESSA</p>
             <p>Via Sotgia, 11 - Usini 07049
                 Sassari - Sardegna (Italia)
-                Tel: 347 028 9441 - Email: chessasalvatore@hotmail.com
+                <strong>Tel</strong>: 347 028 9441 - <strong>Email</strong>: chessasalvatore@hotmail.com
             </p>
         </div>
 
-        <div class="uk-card uk-card-small uk-card-default cr-wrapper chessa-card">
+        <div class="uk-card uk-card-small uk-card-default cr-wrapper chessa-card form-container">
             <form
                 action="https://formspree.io/f/mwkabjrl"
                 method="POST"
