@@ -9,7 +9,7 @@
         <link rel="icon" href="{{ asset('media/favicon.ico') }}?v={{ date('YmdHis') }}">
         <script src="https://kit.fontawesome.com/3fe17b639c.js" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <title>Cantine Chessa Salvatore</title>
+        <title>Cantina Chessa Salvatore</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -91,23 +91,7 @@
         <h2 class="wine-title" id="wines">SINZERU</h2>
         <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin cr-wrapper" id="about-us" style="background: none" uk-grid>
             <div class="uk-text-center">
-                <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
-                    <img src="{{ asset('media/sinzeru-1.png') }}" alt="">
-                    <div class="uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle">
-                        <p class="uk-margin-remove">
-                            <strong>{{ __('messages.classification') }}:</strong> {{ __('messages.classification-text') }}<br>
-                            <strong>{{ __('messages.production') }}:</strong> {{ __('messages.production-text') }}<br>
-                            <strong>{{ __('messages.grape-variety') }}:</strong> {{ __('messages.grape-variety-text') }}<br>
-                            <strong>{{ __('messages.vinification') }}:</strong> {{ __('messages.vinification-text') }}<br>
-                            <strong>{{ __('messages.color') }}:</strong> {{ __('messages.color-text') }}<br>
-                            <strong>{{ __('messages.perfume') }}:</strong> {{ __('messages.perfume-text') }}<br>
-                            <strong>{{ __('messages.taste') }}:</strong> {{ __('messages.taste-text') }}<br>
-                            <strong>{{ __('messages.alcohol') }}:</strong> {{ __('messages.alcohol-text') }}<br>
-                            <strong>{{ __('messages.serving-temperature') }}:</strong> {{ __('messages.serving-temperature-text') }}<br>
-                            <strong>{{ __('messages.pairing') }}:</strong> {{ __('messages.pairing-text') }}<br>
-                        </p>
-                    </div>
-                </div>
+                <img src="{{ asset('media/sinzeru-1.png') }}" alt="">
             </div>
 
             <div class="uk-text-center">
@@ -136,23 +120,7 @@
         <h2 class="wine-title">ANNINNIA</h2>
         <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin cr-wrapper" id="about-us" style="background: none" uk-grid>
             <div class="uk-text-center">
-                <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
-                    <img src="{{ asset('media/anninnia.png') }}" alt="">
-                    <div class="uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle">
-                        <p class="uk-margin-remove">
-                            <strong>{{ __('messages.classification') }}:</strong> {{ __('messages.classification-text-2') }}<br>
-                            <strong>{{ __('messages.production') }}:</strong> {{ __('messages.production-text-2') }}<br>
-                            <strong>{{ __('messages.grape-variety') }}:</strong> {{ __('messages.grape-variety-text-2') }}<br>
-                            <strong>{{ __('messages.vinification') }}:</strong> {{ __('messages.vinification-text-2') }}<br>
-                            <strong>{{ __('messages.color') }}:</strong> {{ __('messages.color-text-2') }}<br>
-                            <strong>{{ __('messages.perfume') }}:</strong> {{ __('messages.perfume-text-2') }}<br>
-                            <strong>{{ __('messages.taste') }}:</strong> {{ __('messages.taste-text-2') }}<br>
-                            <strong>{{ __('messages.alcohol') }}:</strong> {{ __('messages.alcohol-text-2') }}<br>
-                            <strong>{{ __('messages.serving-temperature') }}:</strong> {{ __('messages.serving-temperature-text-2') }}<br>
-                            <strong>{{ __('messages.pairing') }}:</strong> {{ __('messages.pairing-text-2') }}<br>
-                        </p>
-                    </div>
-                </div>
+                <img src="{{ asset('media/anninnia.png') }}" alt="">
             </div>
 
             <div class="uk-text-center">
