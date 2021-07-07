@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="it">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Sito in costruzione">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sito in costruzione</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,400,700" rel="stylesheet">
+    <style>
+    *{box-sizing:border-box}body,html{font-family:Montserrat,sans-serif;font-weight:400;background:#fbfdfe}body>.container{margin-left:auto;margin-right:auto;text-align:center}.container>img{max-width:590px;width:100%}.container>h1{margin-top:0}.container>p{font-weight:lighter}@media (min-width:769px){.container{max-width:768px;padding:15px 0}.container>h1{margin-bottom:15px;font-size:38px}.container>p{font-size:25px}}@media (max-width:768px){.container{max-width:768px;padding:15px}.container>h1{margin-bottom:50px;font-size:30px}.container>p{font-size:20px}}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="./animazione.gif" alt="Presto online"/>
+        <h1>
+          Benvenuto su <span class="dominio"></span>.
+        </h1>
+        <h2>
+          Questo sito è attualmente in costruzione.
+        </h2>
+        <br>
+        <p>
+            <span class="dominio"></span> ha scelto Ergonet come suo hosting provider.
+        </p>
+        <p>
+            Scopri di più su <a href="https://www.ergonet.it">ergonet.it</a>
+        </p>
+    </div>
+    <script>
+	var elements = document.querySelectorAll('.dominio');
+	Array.prototype.forEach.call(elements, function (el) {
+	  el.textContent = window.location.hostname;
+	});
+    </script>
+</body>
+</html>

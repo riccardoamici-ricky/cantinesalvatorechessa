@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-NG3HWCF');</script>
+        <!-- End Google Tag Manager -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -27,6 +34,11 @@
     </head>
     <body>
 
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NG3HWCF"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <!-- Navbar -->
     <div class="main-container">
 
@@ -39,6 +51,10 @@
                         <li><a href="#wines" class="link-nav">{{ __('messages.our-wines') }}</a></li>
                         <li><a href="#service" class="link-nav">{{ __('messages.services') }}</a></li>
                         <li><a href="#contact" class="link-nav">{{ __('messages.contact-us') }}</a></li>
+                        <select class="form-control changeLang" style="background:none;color:white;outline:none;font-size:large;padding-top:4px">
+                            <option value="en" {{ session()->get('locale') == 'en' ? 'selected' : '' }}>ENG</option>
+                            <option value="it" {{ session()->get('locale') == 'it' ? 'selected' : '' }}>ITA</option>
+                        </select>
                     </ul>
                 </div>
             </div>
@@ -91,14 +107,14 @@
         <h2 class="wine-title" id="wines">SINZERU</h2>
         <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin cr-wrapper" id="about-us" style="background: none" uk-grid>
             <div class="uk-text-center">
-                <img src="{{ asset('media/sinzeru-1.png') }}" alt="">
+                <img src="{{ asset('media/sinzeru-1.png') }}" alt="{{ __('messages.classification-text') }}">
             </div>
 
             <div class="uk-text-center">
                 <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
                     <img src="{{ asset('media/sinzeru2.png') }}" alt="">
                     <div class="uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle">
-                    <p class="uk-margin-remove">
+                       <p class="uk-margin-remove">
                             <strong>{{ __('messages.classification') }}:</strong> {{ __('messages.classification-text') }}<br>
                             <strong>{{ __('messages.production') }}:</strong> {{ __('messages.production-text') }}<br>
                             <strong>{{ __('messages.grape-variety') }}:</strong> {{ __('messages.grape-variety-text') }}<br>
@@ -120,14 +136,14 @@
         <h2 class="wine-title">ANNINNIA</h2>
         <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin cr-wrapper" id="about-us" style="background: none" uk-grid>
             <div class="uk-text-center">
-                <img src="{{ asset('media/anninnia.png') }}" alt="">
+                <img src="{{ asset('media/anninnia.png') }}" alt="{{ __('messages.classification-text-2') }}">
             </div>
 
             <div class="uk-text-center">
                 <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
                     <img src="{{ asset('media/anninnia2.png') }}" alt="">
                     <div class="uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle">
-                    <p class="uk-margin-remove">
+                        <p class="uk-margin-remove">
                             <strong>{{ __('messages.classification') }}:</strong> {{ __('messages.classification-text-2') }}<br>
                             <strong>{{ __('messages.production') }}:</strong> {{ __('messages.production-text-2') }}<br>
                             <strong>{{ __('messages.grape-variety') }}:</strong> {{ __('messages.grape-variety-text-2') }}<br>
