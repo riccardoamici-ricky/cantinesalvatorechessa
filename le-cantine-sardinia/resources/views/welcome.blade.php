@@ -10,7 +10,7 @@
         <!-- End Google Tag Manager -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        <meta name="descriptiona" content="Cantina Chessa Salvatore: Nella località di Udini, nasce l'azienda di Chessa Salvatore. Un'attività che persegue l'idea di qualità del grappolo fino alla bottiglia.">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.22/dist/css/uikit.min.css" />
         <link href="{{ asset('css/welcome.css') }}" rel="stylesheet">
         <link rel="icon" href="{{ asset('media/favicon.ico') }}?v={{ date('YmdHis') }}">
@@ -208,7 +208,7 @@
 
         <div class="uk-card uk-card-small uk-card-default cr-wrapper chessa-card contact-card" style="margin-top:30px">
             <img src="{{ asset('media/chessa-salvatore-logo.png') }}" alt="" width="300px">
-            <p>CANTINA SALVATORE CHESSA</p>
+            <p>CANTINA CHESSA SALVATORE</p>
             <p>Via Sotgia, 11 - Usini 07049
                 Sassari - Sardegna (Italia)
                 <strong>Tel</strong>: 347 028 9441 - <strong>Email</strong>: chessasalvatore@hotmail.com
